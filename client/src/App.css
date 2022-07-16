@@ -1,0 +1,105 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* $$$$$$$$$$$$$$$$$$$$$ STYLING CAROUSEL $$$$$$$$$$$$$$$$$$$$$ */  
+.carousel-overlay{
+  position:absolute;
+  top: 0px;
+  left:0px;
+  background-color: rgba(0, 0, 0, 0.788);
+  height: 100%;
+  width: 100%;
+}
+/* $$$$$$$$$$$$$$$$$$$$$ END STYLING CAROUSEL $$$$$$$$$$$$$$$$$$$$$ */  
+
+/* $$$$$$$$$$$$$$$$$$$$$ CONFIRM ALERT MESSAGE $$$$$$$$$$$$$$$$$$$$$ */  
+.custom-ui{
+  text-align: center;
+  width: 500px;
+  height: 210px;
+  padding: 40px;
+  background: #28bae6;
+  box-shadow: 0 20px 75px rgb(0 0 0 / 23%);
+  color: #fff;
+}
+
+.custom-ui h3, .custom-ui p{
+  color: white;
+  text-align: center;
+}
+
+.custom-ui button{
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #fff;
+  margin: 10px;
+  cursor: pointer;
+  background: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.custom-ui button:hover{
+  padding: 11px;
+  background: rgb(4, 0, 255);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  transition: all 0.3s;
+}
+/* $$$$$$$$$$$$$$$$$$$$$ END CONFIRM ALERT MESSAGE $$$$$$$$$$$$$$$$$$$$$ */  
+
+/* $$$$$$$$$$$$$$$$$$$$$ LOADING OVERLAY $$$$$$$$$$$$$$$$$$$$$ */  
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.95) url(loading-1.gif) no-repeat center center;
+  background-size: 100px 100px;
+  z-index: 10000;
+}
+/* $$$$$$$$$$$$$$$$$$$$$ END LOADING OVERLAY $$$$$$$$$$$$$$$$$$$$$ */  
+
+/* $$$$$$$$$$$$$$$$$$$$$ STYLING FLASH MESSAGE $$$$$$$$$$$$$$$$$$$$$ */  
+#flash-box>div {
+  padding: 5px 20px !important;
+  background-color: transparent !important;
+  margin-bottom: 0px !important;
+}
+/* $$$$$$$$$$$$$$$$$$$$$ END STYLING FLASH MESSAGE $$$$$$$$$$$$$$$$$$$$$ */  
+
+
+
+
+
+
+
+
+
+/* REACT TRANSITION AND ANIMATION */
+.page-enter {
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
+}

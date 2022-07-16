@@ -1,0 +1,64 @@
+/* Styling Navbar*/
+#navArea {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 3px 10px;
+    position: absolute;
+    top: auto;
+    width: 100%;
+    background: rgba(0, 0, 0, 0) !important;
+    transition: background 1s;
+    z-index: 10;
+}
+  
+#navArea .logo img {
+    height: 79px;
+    width: 120px;
+    margin-left: 10px;
+    transition: height 1s;
+}
+  
+#navArea ul {
+    list-style: none;
+    /* width: 700px; */
+    justify-content: space-around;
+    /* padding: 10px; */
+    /* margin-right: -900px; */
+}
+#navArea ul li a {
+    color: white;
+    /* font-weight: 600; */
+    font-size: larger;
+    /* padding: 16px 20px 10px 20px; */
+  /* transition: color 1s; */
+  }
+  
+  /* Avatar when user logged in */
+  
+#avatar-user .dropdown-menu a, #avatar-user .dropdown-menu button{
+    color: #777;
+    padding: 8px 20px;
+    line-height: normal;
+}
+
+#avatar-user .dropdown-menu{
+    left: -38px !important;
+    right: 0px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link{
+        color: white;
+        font-size: larger;
+    }
+
+    #avatar-user .avatar-mobile{
+        position: absolute;
+        top: 0px;
+        left: 15px;
+    }
+
+    .navbar-brand{
+        margin-right: -3rem;
+    }
+}

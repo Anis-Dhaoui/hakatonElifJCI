@@ -1,0 +1,116 @@
+#search-container{
+  display: flex;
+  justify-content: center;
+}
+#search-container .wrapper {
+  max-width: 100%;
+  width: 400px;
+  padding: 0 1.5em;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 1.5em;
+  overflow: hidden;
+}
+#search-container .wrapper:hover, .wrapper.focus {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+#search-container .search {
+  display: flex;
+  height: 3em;
+  align-items: center;
+}
+#search-container .search input {
+  flex: 1;
+  width: 100%;
+  border: 0;
+}
+#search-container .search i {
+  color: 007bff;
+}
+:focus {
+  outline: none;
+}
+
+/* Begin List animation */
+@keyframes translateY {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  /* 49% {
+    max-height: 143px;
+  } */
+  100% {
+    opacity: 1;
+    max-height: 287px;
+  }
+}
+
+#search-container .list {
+  margin-left: -9px;
+  position: absolute;
+  list-style: none;
+  padding: 15px 0;
+  border-top: 1px solid lightgray;
+  max-height: 287px;
+  overflow: hidden;
+  overflow-y: auto;
+  animation: translateY 0.4s ease-in-out forwards;
+  background-color: whitesmoke;
+  width: 368px;
+}
+/* End List animation */
+
+#search-container .list li {
+  margin-right: -1.5em;
+  margin-left: -1.5em;
+  padding: 0 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  cursor: pointer;
+  color: black;
+}
+#search-container .list li:hover {
+  background: whitesmoke;
+}
+.result {
+  display: flex;
+  align-items: center;
+}
+#search-container .result b {
+  margin-right: 0.5em;
+}
+#search-container .result span {
+  margin: 0 0.5em;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+}
+@keyframes enlarge {
+  to {
+    max-height: 10em;
+ }
+}
+
+@media screen and (max-width: 991px) {
+  #search-container .wrapper, #search-container .search input{
+    background: rgb(173, 160, 248);
+  }
+
+  #search-container .list{
+    width: 367px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  #search-container .list{
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #search-container{
+    padding-top: 2em;
+  }
+}

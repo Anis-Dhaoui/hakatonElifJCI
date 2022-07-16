@@ -1,0 +1,193 @@
+  /* CAROUSEL THAT SHOWS PRODUCTS IMAGES */
+.product-imgs-content .carousel, .product-imgs-content .carousel img{
+    width: 413px;
+    height: 400px;
+    z-index: 10;
+    max-width: 100%;
+    transition: all 0.4s linear;
+}
+.product-imgs-content .carousel img:hover{
+    transform: scale(1.3);
+    z-index: 1;
+    overflow: hidden;
+}
+/* Syling carousel indicators */
+.product-imgs-content .carousel .carousel-indicators{
+    position: absolute;
+    width: 135px;
+    margin: auto 0 auto 0;
+    left: 0;
+    top: auto;
+    bottom: -7px;
+}
+.product-imgs-content .carousel .carousel-indicators li{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    transition: all 0.4s;
+    background-color: rgb(8, 54, 8);
+}
+.product-imgs-content .carousel .carousel-indicators .active{
+    border: 3px solid rgb(35, 213, 226);
+    transition: all 0.3s;
+    background-color: rgb(12, 255, 12);
+}
+
+/* This class is the container of Carousel */
+.product-imgs-content {
+    width: 422px;
+    height: auto;
+    padding: 0px;
+    margin: 3px;
+    border: 1px solid rgb(206, 206, 206);
+    border-bottom: none;
+    cursor: pointer;
+    max-width: 100%;
+}
+.product-imgs-content:hover{
+    border: 1px solid rgb(94, 91, 91);
+    border-bottom: none;
+}
+
+/* STYLING: ADD TO WISH LIST BUTTON, PRODUCT TITLE AND PRICE AND ADD TO CART BUTTON */
+.title-price-like_content{
+    padding: 5px;
+    max-width: 100%;
+}
+.title-price .col-12, .title-price-like_content{
+    width: 420px;
+}
+
+.wishlist-button{
+    position: absolute;
+    top: auto;
+    bottom: 108px;
+    right: 2px;
+    z-index: 10;
+    width: 0px;
+}
+
+/* Title */
+.title-price div span:nth-child(1){
+    margin-left: 5px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Price */
+.title-price div span:nth-child(2){
+    max-width: 100%;
+    margin-right: 0px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* .title-price div span:nth-child(2)::before{
+    content: "$";
+} */
+/* call seller button */
+.call-seller-btn{
+    width: auto;
+    height: 65px;
+    padding: 2px;
+    margin-top: -50px;
+    max-width: 100%;
+}
+.call-seller-btn .btn-outline-success{
+    width: 350px;
+    border-radius: 0;
+    border: 1px solid rgb(94, 91, 91);
+    transform: translate(0, -95px);
+    transition: all 0.4s linear;
+    text-transform: UPPERCASE;
+  
+}
+/* Display "Add to cart" button when the mouse hover over product */
+.product-container:hover .call-seller-btn .btn-outline-success{
+    transform: translate(0, 0);
+}
+
+.product-imgs-content .card-img-overlay{
+    background-color: #000000a1;
+    height: 60px;
+    z-index: 9999;
+  }
+
+/* PAGINATION...PAGINATION...PAGINATION...PAGINATION...PAGINATION...PAGINATION...PAGINATION...PAGIN */
+.pagination {
+  margin: 0px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+  padding: 15px 10px;
+  background-color: #04cde7;
+}
+.pagination > .active > a{
+    border: 2px solid white;
+    border-radius: 100%;
+    color: #fff;
+}
+.pagination > li > a{
+  border: none ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  outline: none ;
+}
+/* .pagination > li > a, .pagination > li > span{
+  color: #47ccde
+} */
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+  border-radius: unset;
+  border-right: 1px solid rgba(8, 4, 4, 0.212);
+  font-weight: bold;
+  margin-right: 25px;
+  background-color: rgb(10, 168, 173);
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: unset;
+    border-left: 1px solid rgba(8, 4, 4, 0.212);
+    font-weight: bold;
+    margin-left: 25px;
+    background-color: rgb(10, 168, 173);
+}
+/*Disable Next and Prev buttons in pagination */
+.disabledBtn{
+  color: rgb(228, 228, 228);
+}
+
+
+
+
+/* RESPONSIVE STYLING */
+@media screen and (max-width: 576px) {
+    .product-imgs-content .carousel, .product-imgs-content .carousel img{
+        width: 530px;
+        height: 250px;
+    }
+    .title-price-like_content,
+    .title-price .col-12{
+        width: 530px;
+    }
+    .product-imgs-content{
+        width: 532px;
+    }
+    .call-seller-btn .btn-outline-success{
+        transform: translate(0,0);
+        width: 100%;
+    }
+  
+    .render-prod .row .product-container.col-12{
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px){
+    .call-seller-btn .btn{
+        display: block;
+        width: 100%;
+    }
+}
+

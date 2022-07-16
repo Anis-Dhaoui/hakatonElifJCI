@@ -1,0 +1,107 @@
+/* Carousel */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+
+#quote-carousel .carousel-control-prev {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: -165px;
+    left: -60px;
+}
+
+#quote-carousel .carousel-control-next {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: -165px;
+    right: -60px;
+}
+
+#quote-carousel .carousel-indicators {
+    top: auto;
+    bottom: 0px;
+}
+#quote-carousel .carousel-indicators img {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 0px 5px;
+    cursor: pointer;
+    border: 4px solid rgb(153, 126, 126);
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: rgb(93, 77, 184);
+    width: 135px;
+    height: 135px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+    margin-top: -75px;
+}
+#quote-carousel .carousel-inner {
+    min-height: 300px;
+}
+#quote-carousel .carousel-item blockquote {
+    border-left: none;
+    margin: 0;
+}
+#quote-carousel .carousel-item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+#quote-carousel .carousel-item blockquote small{
+    margin-left: 45%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width: 596px){
+  #quote-carousel {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  #quote-carousel .xxx{
+    display: none;
+  }
+}
+
+@media (max-width: 426px){
+    #quote-carousel .carousel-indicators .active {
+        width: 201px;
+        height: 92px;
+        border-radius: 100px;
+        opacity: 1;
+        overflow: hidden;
+        margin: -52px 3px -40px 3px;
+    }
+
+    #quote-carousel .carousel-indicators img {
+        width: 70px;
+        height: 38px;
+        margin: 0 2px 0px 2px;
+    }
+
+    .px-5{
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+}

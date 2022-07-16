@@ -1,0 +1,27 @@
+/* #product-detail .add-to-cart, .like {
+    background: #1475f5;
+    padding: 1.2em 1.5em;
+    border: none;
+    text-transform: UPPERCASE;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+}
+#product-detail .add-to-cart{
+    width: 170px;
+}
+#product-detail .add-to-cart:hover, .like:hover {
+    background: #14c1f5;
+    color: #fff;
+} */
+
+
+.like{
+    color: rgb(0, 238, 255);
+    cursor: pointer;
+}
+.like:hover{
+    content: "\f004";
+    color:  rgba(0, 238, 255, 0.918);;
+}

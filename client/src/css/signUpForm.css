@@ -1,0 +1,52 @@
+#signup-form .modal-title{
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+#signup-form{
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    background-color: rgba(26, 71, 100, 0.61) !important;
+}
+
+#signup-form label{
+    color: #007bff;
+}
+
+#signup-form .social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    /* color: #FFC312; */
+}
+
+.social_icon .fa-facebook-square{
+    color: #3b5998;
+}
+.social_icon .fa-google-plus-square{
+    color: #4285F4;
+}
+.social_icon .fa-twitter-square{
+    color: 	#1DA1F2;
+}
+.social_icon .fa-linkedin-square{
+    color: 	#0072b1;
+}
+
+#signup-form .social_icon .fa:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#signup-form .card-header h3{
+    color: white;
+}
+
+#signup-form .social_icon{
+    position: absolute;
+    right: 134px;
+    top: -48px;
+    z-index: 9999;
+}
+    

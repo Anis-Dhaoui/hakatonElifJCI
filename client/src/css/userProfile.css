@@ -1,0 +1,203 @@
+#user-profile {
+    margin-top: 150px;
+    box-shadow: 2px 2px 28px grey;
+    background-color: rgb(153 215 212 / 8%);
+}
+#user-profile .nav-link{
+    text-decoration: none;
+    color: rgb(53, 5, 97);
+    cursor: pointer;
+  }
+/* $$$$$$$$$$$$$$$$$$$ Profile Setting $$$$$$$$$$$$$$$$$$$$ */
+.avatar-wrapper {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 50px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px -5px black;
+    transition: all 0.3s ease;
+}
+.avatar-wrapper:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.avatar-wrapper:hover .profile-pic {
+    opacity: 0.5;
+}
+.avatar-wrapper .profile-pic {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.avatar-wrapper .profile-pic:after {
+    font-family: FontAwesome;
+    content: "\f007";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 190px;
+    background: #ecf0f1;
+    color: #34495e;
+    text-align: center;
+}
+.avatar-wrapper .upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.avatar-wrapper .upload-button .fa-arrow-circle-up {
+    position: absolute;
+    font-size: 234px;
+    top: -17px;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #34495e;
+}
+.avatar-wrapper .upload-button:hover .fa-arrow-circle-up {
+    opacity: 0.9;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$ My Products $$$$$$$$$$$$$$$$$$$$ */
+/* publish/Unpublish */
+
+  #publish-unpublish .switch {
+    display: block;
+    margin: 22px auto;
+  }
+  
+  #publish-unpublish .switch {
+    position: relative;
+    display: inline-block;
+    width: 119px;
+    height: 36px;
+    padding: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #publish-unpublish .switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  #publish-unpublish .switch-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: red;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
+    -webkit-transition-property: opacity background;
+    -moz-transition-property: opacity background;
+    -o-transition-property: opacity background;
+    transition-property: opacity background;
+  }
+  #publish-unpublish .switch-label:before, .switch-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+  }
+  #publish-unpublish .switch-label:before {
+    content: attr(data-off);
+    right: 9px;
+    color: white;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  }
+  #publish-unpublish .switch-label:after {
+    content: attr(data-on);
+    left: 11px;
+    color: white;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+  }
+  #publish-unpublish .switch-input:checked ~ .switch-label {
+    background: green;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  #publish-unpublish .switch-input:checked ~ .switch-label:before {
+    opacity: 0;
+  }
+  #publish-unpublish .switch-input:checked ~ .switch-label:after {
+    opacity: 1;
+  }
+  
+  #publish-unpublish .switch-handle {
+    position: absolute;
+    top: 1px;
+    left: -5px;
+    width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-linear-gradient(top, white 40%, #f0f0f0);
+    background-image: -moz-linear-gradient(top, white 40%, #f0f0f0);
+    background-image: -o-linear-gradient(top, white 40%, #f0f0f0);
+    background-image: linear-gradient(to bottom, white 40%, #f0f0f0);
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+  }
+  #publish-unpublish .switch-handle:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    background: #0beaf1;
+    border-radius: 6px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+  }
+  #publish-unpublish .switch-input:checked ~ .switch-handle {
+    left: 82px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #publish-unpublish .switch-green > .switch-input:checked ~ .switch-label {
+    background: #4fb845;
+  }
+  
+/* publish/Unpublish */
+
+/* $$$$$$$$$$$$$$$$$$$ POST NEW PRODUCT $$$$$$$$$$$$$$$$$$$$ */
+.rounded.img-preview {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .responsive-image{
+        height: 300px;
+    }
+}

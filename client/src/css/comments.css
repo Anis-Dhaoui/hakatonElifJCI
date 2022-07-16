@@ -1,0 +1,88 @@
+/* $$$$$$$$$$$$$$$$$$$$ BEGIN COMMENTS FORM $$$$$$$$$$$$$$$$$$$$*/
+#comment-form-and-comments label,
+#comment-form-and-comments textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+#comment-form-and-comments textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    box-shadow: 2px 2px 50px #999;
+}
+
+#comment-form-and-comments label {
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgba(69, 195, 245, 0.63);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#comment-form-and-comments label .badge-dark{
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    
+}
+/* $$$$$$$$$$$$$$$$$$$$ END COMMENTS FORM $$$$$$$$$$$$$$$$$$$$*/
+
+
+/* $$$$$$$$$$$$$$$$$$$$ BEGIN SHOW COMMENTS $$$$$$$$$$$$$$$$$$$$*/
+#comment-form-and-comments{
+    margin-bottom: 70px;
+}
+  
+.comments {
+    margin-top: 5%;
+    margin-left: 20px
+}
+  
+#comment-form-and-comments .comment {
+    border: 1px solid rgb(37, 115, 216);
+    background-color: rgba(37, 115, 216);
+    float: left;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+#comment-form-and-comments .comment-container{
+    border: 1px solid rgb(255, 255, 255);
+    /* padding: 20px; */
+    border-radius: 5px;
+    box-shadow: 2px 2px 90px 2px rgba(37, 115, 216, 0.658);
+    height: auto;
+    max-height: 750px;
+    overflow-y: scroll;
+}
+  
+#comment-form-and-comments p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+}
+  
+#comment-form-and-comments h1, #comment-form-and-comments h5 {
+    display: inline;
+}
+
+#comment-form-and-comments img {
+    margin: -8px 10px 0 -37px;
+    position: static
+}
+
+#comment-form-and-comments .btn-group{
+    margin-right: -28px;
+    margin-bottom: 3px;
+}
+/* $$$$$$$$$$$$$$$$$$$$ BEGIN SHOW COMMENTS $$$$$$$$$$$$$$$$$$$$*/
+
+
+@media screen and (max-width: 768px) and (max-width: 576px){
+    #comment-form-and-comments .comment-container{
+        padding: 0px;
+    }
+}
