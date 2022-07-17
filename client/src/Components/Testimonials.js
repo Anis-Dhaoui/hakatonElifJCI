@@ -5,23 +5,18 @@ export default function Testimonial(props) {
     const feedback =[
         {
             "id": "01",
-            "feedback": "I found my car on TheWayShop for a good deal. I am satisfied with the service",
-            "name": "Sandra Louie"
+            "feedback": "Nous avons passé un moment fantastique à parcourir Siliana en long et en large. Malgré Covid, c'était comme si nous faisions des choses normales pour la première fois depuis longtemps! Des paysages incroyables, des villes et des ruines anciennes, des hôtels et de la nourriture fabuleux et si bon marché - nous ne pouvons pas croire que l'Albanie ne soit pas sur le radar de plus de gens.",
+            "name": "Anis Dhaoui"
         },
         {
             "id": "02",
-            "feedback": "As a professional, I can sell quickly and easily on TheWayShop",
-            "name": "Brian Thomas"
+            "feedback": "7 jours de voyage autour de Siliana avec un petit groupe. des tortues, des forts, de beaux whaddi, des boutres, des déserts, des souks, des villages abandonnés, une mosquée à couper le souffle, des croisières au coucher du soleil. Je pourrais continuer - juste un pays brillant si vous avez envie d'aventure.",
+            "name": "Marwen Zakraoui"
         },
         {
             "id": "03",
-            "feedback": "Now I can earn my pocket money thanks to TheWayShop!",
-            "name": "Angela Turatig"
-        },
-        {
-            "id": "04",
-            "feedback": "Lorem ipsum lorem ipsum lorem ipsum",
-            "name": "Sandra Donalla"
+            "feedback": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+            "name": "Ahmed Thambri"
         }
     ]
 

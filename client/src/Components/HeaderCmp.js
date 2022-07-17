@@ -119,13 +119,13 @@ function Header (){
 							!auth.isAuthenticated ?
 								<>
 									<NavItem className="mr-2 order-12 order-md-1" onClick={() => setisNavOpen(!isNavOpen)}>
-										<Button className="d-none d-md-block" id="login-btn" outline color="primary" onClick={() => setisSignupOpen(!isSignupOpen)}>
+										<Button className="d-none d-md-block" id="login-btn" outline color="light" onClick={() => setisSignupOpen(!isSignupOpen)}>
 											<span className="fa fa-chevron-up fa-lg"> Signup </span>
 										</Button>
 										<span onClick={() => setisSignupOpen(!isSignupOpen)} className="nav-link d-block d-md-none ml-0 py-1"><span className="fa fa-chevron-up fa-lg"></span> SignUp</span>
 									</NavItem>
 									<NavItem className="order-1 order-md-12" onClick={() => setisNavOpen(!isNavOpen)}>
-										<Button className="d-none d-md-block" id="login-btn" outline color="primary" onClick={() => setisSigninOpen(!isSigninOpen)}>
+										<Button className="d-none d-md-block" id="login-btn" outline color="light" onClick={() => setisSigninOpen(!isSigninOpen)}>
 											{
 												auth.isLoading ?
 													<span className="fa fa-spinner fa-pulse fa-fw"></span>
