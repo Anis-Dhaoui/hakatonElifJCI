@@ -27,7 +27,7 @@ export default function SearchProducts (props) {
                 id="search"
                 type="search"
                 value={search}
-                placeholder="Search a product by name..."
+                placeholder="Chercher une place par nom..."
                 onChange={onInput}
                 onFocus={onFocus}
                 onBlur={onBlur}

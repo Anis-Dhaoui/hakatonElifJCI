@@ -51,7 +51,7 @@ export default function MostRecentProd (props){
                             <h5 className="card-title text-center text-uppercase">{product.name}</h5>
                             <div className="row">
                                 <p style={{fontSize:"14px"}} className="col-6 card-text text-muted">{formatDate(product.createdAt, '-')}</p>
-                                <p className="col card-text text-right lead">{"$" + product.price}</p>
+                                <p className="col card-text text-right lead">{"jours" + product.price}</p>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export default function MostRecentProd (props){
         <>
             <div className="row">
                 <div className="col-6">
-                    <h3 className="text-info ml-3 most-recent-text">Most Recent Products</h3>
+                    <h3 className="text-info ml-3 most-recent-text">Les plus récents postes</h3>
                 </div>
                 <div className="col-6 text-right ml-n3">
                     <a className="btn btn-primary mb-3 mr-1" href="#recentProductsSlideShow" role="button" data-slide="prev">

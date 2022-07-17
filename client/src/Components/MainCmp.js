@@ -16,6 +16,7 @@ import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import ForgotPasswordEnterEmail from './ForgotPasswordEnterEmail';
 import ForgotPasswordEnterNewPass from './ForgotPasswordEnterNewPass'
+import PlaceDetail from './PlaceDetailCmp';
 
 function Main(props) {
 
@@ -58,6 +59,7 @@ function Main(props) {
 						<Switch>
 							<Route exact path="/home" component={() => <Home /> } />
 							<Route exact path="/products/:productId/:productName?" component={() => <ProductDetail /> } />
+							<Route exact path="/places/:placeId/:placeName?" component={() => <PlaceDetail /> } />
 							<Route path="/wishlist" component={() => token ? <Wishlist /> : <Redirect to="/home" />} />
 							<Route path="/profile"  component={() => token ? <UserProfile /> : <Redirect to="/home" />} />
 							<Route exact path="/users/verify/:userId/:confirCode" />

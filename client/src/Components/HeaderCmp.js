@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem } from 'reactstrap';
 import '../App.css';
-import SlideShow from './Carousel';
 import Login from './LoginFormCmp';
 import Signup from './signupFormCmp';
 import { confirmAlert } from 'react-confirm-alert';
@@ -20,7 +19,7 @@ function Header (){
 
 	const state = useSelector(state => state);
 	const auth = state.auth;
-	const products = state.products.products;
+	const products = state.places.places;
 
 	const dispatch = useDispatch();
 

@@ -31,7 +31,7 @@ export default function UserProfile(props) {
                     className={classnames({ active: activeTab === '2' })}
                     onClick={() => { toggle('2'); }}
                     >
-                        <h6 className="text-center">My Products</h6>
+                        <h6 className="text-center">Mes Aventures</h6>
                     </NavLink>
                 </Col>
                 <Col className="col-12 col-sm-4 nav-item bg-warning">
@@ -39,7 +39,23 @@ export default function UserProfile(props) {
                     className={classnames({ active: activeTab === '3' })}
                     onClick={() => { toggle('3'); }}
                     >
-                        <h6 className="text-center">Post new product</h6>
+                        <h6 className="text-center">Publier Aventures</h6>
+                    </NavLink>
+                </Col>
+                <Col>
+                <NavLink
+                    className={classnames({ active: activeTab === '4' })}
+                    onClick={() => { toggle('4'); }}
+                    >
+                        <h6 className="text-center">Créer un groupe</h6>
+                    </NavLink>
+                </Col>
+                <Col>
+                <NavLink
+                    className={classnames({ active: activeTab === '5' })}
+                    onClick={() => { toggle('5'); }}
+                    >
+                        <h6 className="text-center">Participer</h6>
                     </NavLink>
                 </Col>
             </Row>
@@ -50,14 +66,17 @@ export default function UserProfile(props) {
                 </TabPane>
                 <TabPane tabId="2">
                 <Row>
-                    <div className="d-flex justify-content-between align-items-center mb-3">
-                        <h4 className="text-right m-3">My products</h4>
-                    </div>
                     <MyProducts />
                 </Row>
                 </TabPane>
                 <TabPane tabId="3">
                     <PostProducs />
+                </TabPane>
+                <TabPane tabId="4">
+                    <h1 style={{padding: "300px"}}>Créer un groupe camping</h1>
+                </TabPane>
+                <TabPane tabId="5">
+                    <h1 style={{padding: "300px"}}>Participer a un groupe groupe</h1>
                 </TabPane>
             </TabContent>
         </div>

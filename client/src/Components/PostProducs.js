@@ -111,13 +111,13 @@ export default function PostProducts (props) {
             <Row>
                 <Col md lg={props.targetProduct ? 12 : 6}>
                     <FormGroup>
-                        <Label for="productName">Name</Label>
+                        <Label for="productName">Adventure Name</Label>
                         <Controller
                             control={control}
                             name="name"
                             render={({ field }) => (
                                 <Input
-                                    placeholder="Product name"
+                                    placeholder="Adventure name"
                                     onChange={(name) => field.onChange(name)}
                                     required
                                     defaultValue={props.targetProduct ? props.targetProduct.name : null}
@@ -127,14 +127,14 @@ export default function PostProducts (props) {
 
                     </FormGroup>
                     <FormGroup>
-                        <Label for="productPrice">Price</Label>
+                        <Label for="productPrice">How many days</Label>
                         <Controller
                             control={control}
                             name="price"
                             render={({ field }) => (
                                 <Input
                                     onKeyPress={(e) => !/[0-9 .]/.test(e.key) ? e.preventDefault() : null}
-                                    placeholder="Product price"
+                                    placeholder="Days"
                                     onChange={(price) => field.onChange(price)}
                                     required
                                     defaultValue={props.targetProduct ? props.targetProduct.price : null}
@@ -151,7 +151,7 @@ export default function PostProducts (props) {
                             render={({ field }) => (
                                 <Input
                                     type="textarea"
-                                    placeholder="Product description"
+                                    placeholder="Adventure description"
                                     onChange={(description) => field.onChange(description)}
                                     rows="8"
                                     required
@@ -164,7 +164,7 @@ export default function PostProducts (props) {
                 </Col>
                 {
                 props.targetProduct ?
-                <Input type="submit" value="Update Product" className=" w-50 mx-auto btn btn-outline-warning"></Input>
+                <Input type="submit" value="Update Adventure" className=" w-50 mx-auto btn btn-outline-warning"></Input>
                 :
                 <Col md lg={6}>
                 
@@ -172,7 +172,7 @@ export default function PostProducts (props) {
                     <Row>
                         <Col>
                             <FormGroup>
-                                <Label for="productImage">Product image </Label>
+                                <Label for="productImage">Place images </Label>
                                 <Controller
                                     control={control}
                                     name="images"
@@ -217,7 +217,7 @@ export default function PostProducts (props) {
                                 props.targetProduct ?
                                     null
                                 :
-                                    <Input type="submit" value="Post Product" className="btn btn-outline-dark"></Input>
+                                    <Input type="submit" value="Post adventure" className="btn btn-outline-dark"></Input>
                             }
                         </Col>                        
                     </Row>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import '../css/renderProducts.css';
-import formatDate from '../js/plugins';
 import {url} from '../shared_data/Url';
 import AddToWishlist from './addToWishlistButton';
 import slugify from 'react-slugify';
@@ -47,7 +46,7 @@ export default function RenderPlaces(props) {
                                 })
                             }
                         </ol>
-                        <Link to={`/products/${product._id}/${slugify(product.name)}`} >
+                        <Link to={`/places/${product._id}/${slugify(product.name)}`} >
                             <div className="carousel-inner">
                                 {
                                     product.images.slice(0, 4).map((item, index) =>{
