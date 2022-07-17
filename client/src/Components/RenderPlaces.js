@@ -10,11 +10,10 @@ import slugify from 'react-slugify';
 export default function RenderPlaces(props) {
 
     // Sort products array by most recent recent date
-    const sortedProducts = props.places.places.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    const sortedProducts = props.places.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     const products = sortedProducts;
     const isAuthenticated = props.authCheck;
     const productsPerPage = props.productsPerPage;
-    console.log(products);
     const [currentItems, setCurrentItems] = useState(null);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);

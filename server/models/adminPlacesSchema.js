@@ -11,6 +11,10 @@ var adminPlacesSchema = new mongoose.Schema(
             type:String,
             required:true
         },
+        category:{
+            type: Boolean,
+            default: false
+        },
         images: {
             type: Array,
             default: []

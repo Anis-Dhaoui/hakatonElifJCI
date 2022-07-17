@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 function Home(props) {
     const state = useSelector(state => state);
     const products = state.products;
-    const places = state.places;
+    const places = state.places.places;
     const auth = state.auth;
 
     return (
@@ -33,16 +33,17 @@ function Home(props) {
                         : products.errMsg ? <h5 className="text-danger">{products.errMsg}</h5>
 
                             :
-                            <>   <h3 className="text-info mx-auto">Emplacement Historique</h3>
-                                <RenderPlaces places={places}
+                            <>   
+                            <h3 className="text-info mx-auto">Emplacement Historique</h3>
+                                <RenderPlaces places={places.filter(item => !item.category)}
                                     authCheck={auth.isAuthenticated}
-                                    productsPerPage={9}
+                                    productsPerPage={6}
                                 />
 
                                 <h3 className="text-info mx-auto mt-5 mb-n4">Bon Plan</h3>
-                                <RenderPlaces places={places}
+                                <RenderPlaces places={places.filter(item => item.category)}
                                     authCheck={auth.isAuthenticated}
-                                    productsPerPage={9}
+                                    productsPerPage={6}
                                 />
                             </>
                 }
