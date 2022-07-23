@@ -16,7 +16,7 @@ function PlaceDetail() {
     const user = state.auth;
     console.log(place);
 
-    if(place == undefined){
+    if(place === undefined){
         return <Loading />
     }else 
     if(state.products.errMsg !== null){
